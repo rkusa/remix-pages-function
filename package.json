@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "remix-app-template",
+  "description": "",
+  "license": "",
+  "scripts": {
+    "build": "remix build",
+    "start": "concurrently 'wrangler pages dev worker/public' 'remix watch'",
+    "postinstall": "remix setup cloudflare-workers",
+    "deploy": "npm run build && wrangler publish"
+  },
+  "dependencies": {
+    "@remix-run/react": "^1.0.5",
+    "@remix-run/server-runtime": "^1.0.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remix": "^1.0.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.2.0",
+    "@remix-run/cloudflare-workers": "^1.0.5",
+    "@remix-run/dev": "^1.0.5",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "concurrently": "^6.4.0",
+    "typescript": "^4.1.2",
+    "wrangler": "file:../../../Downloads/wrangler2/packages/wrangler",
+    "wrangler-root": "github:rkusa/wrangler2#functions-dir"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false
+}
