@@ -1,4 +1,4 @@
-import { handleRequest } from "../../remix";
+import { handleRequest } from "../worker/remix";
 
 export async function onRequest({
   request,

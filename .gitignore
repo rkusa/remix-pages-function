@@ -5,4 +5,4 @@ node_modules
 
 /.cache
 /worker/build
-/worker/public/static
+/public/static

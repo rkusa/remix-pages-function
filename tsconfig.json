@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2020"],
+    "types": [
+      "@remix-run/cloudflare-workers/globals",
+      "@cloudflare/workers-types"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES2020"
+  },
+  "include": ["functions", "worker"]
+}

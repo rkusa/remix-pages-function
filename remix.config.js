@@ -3,8 +3,8 @@
  */
 module.exports = {
   appDirectory: "app",
-  browserBuildDirectory: "worker/public/static",
+  browserBuildDirectory: "public/static",
   publicPath: "/static/",
   serverBuildDirectory: "worker/build",
-  devServerBroadcastDelay: 1000
+  devServerBroadcastDelay: 1000,
 };

@@ -2,7 +2,6 @@
   "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
-    "types": ["@remix-run/dev"],
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
